@@ -1,6 +1,10 @@
 # [![ECI](imagenes/logo_eci.png)](https://www.escuelaing.edu.co/)PROYECTO INTEGRACIÓN DISPOSITIVOS ELECTRÓNICOS
 #### Diseño de un Sistema de Monitoreo de Vibraciones IoT con Conectividad LoRaWAN
 
+## Índice
+* [PCB](#diseño-pcb)
+* [3D](#diseño-3d)
+
 ## Entregable 1
 Guía con el archivo _Markdown_ anexo en el repositorio. [Base entregable 1](./ent1.md)
 
@@ -61,6 +65,19 @@ Antes de comenzar es necesario buscar sobre dispositivos similares y si existen,
 <p align="center">
   <img src="imagenes/logo_eagle.png" alt="Logo" width="300">
 </p>
+
+Primer paso fue construir la PCB que entrara a la perfección dentro de la caja seleccionada que se ve a continuación.
+
+![Caja](image.png)
+
+Estas medidas se siguieron al pie de la letra para poder diseñar a la perfección la PCB y el circuito que se desea.
+
+Materiales:
+> [LoRa-E5](https://co.mouser.com/ProductDetail/Seeed-Studio/317990687?qs=hd1VzrDQEGhZOj13wvzSLA%3D%3D)
+> [STM32L071KBT6](https://co.mouser.com/ProductDetail/STMicroelectronics/STM32L071KBT6?qs=mKNKSX85ZJf5FR8Umx1PEQ%3D%3D)
+> [Sock bateria](https://co.mouser.com/ProductDetail/Keystone-Electronics/1015?qs=73q%2FgRcW4F2OhJTPPQWZpA%3D%3D)
+
+
 
 
 ## Diseño 3D
