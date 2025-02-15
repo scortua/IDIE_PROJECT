@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -73,47 +73,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="frames" urn="urn:adsk.eagle:library:229">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="A5L-LOC" urn="urn:adsk.eagle:symbol:13879/1" library_version="1">
-<wire x1="85.09" y1="3.81" x2="85.09" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="85.09" y1="24.13" x2="139.065" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="24.13" x2="180.34" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="170.18" y1="3.81" x2="170.18" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="170.18" y1="8.89" x2="180.34" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="170.18" y1="8.89" x2="139.065" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="8.89" x2="139.065" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="8.89" x2="139.065" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="13.97" x2="180.34" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="13.97" x2="139.065" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="19.05" x2="180.34" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="19.05" x2="139.065" y2="24.13" width="0.1016" layer="94"/>
-<text x="140.97" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="140.97" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="154.305" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="140.716" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="184.15" y2="133.35" columns="4" rows="4" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="A5L-LOC" urn="urn:adsk.eagle:component:13933/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>A5L LOC</description>
-<gates>
-<gate name="G$1" symbol="A5L-LOC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SamacSys_Parts">
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -264,75 +223,75 @@
 <pin name="-" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 <symbol name="LORA-E5">
-<wire x1="2.54" y1="12.7" x2="33.02" y2="12.7" width="0.254" layer="94"/>
-<wire x1="33.02" y1="-27.94" x2="33.02" y2="12.7" width="0.254" layer="94"/>
-<wire x1="33.02" y1="-27.94" x2="2.54" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="2.54" y1="12.7" x2="2.54" y2="-27.94" width="0.254" layer="94"/>
-<text x="1.27" y="15.24" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="26.67" y="15.24" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="VCC" x="17.78" y="15.24" length="short" rot="R270"/>
-<pin name="GND" x="17.78" y="-30.48" length="short" rot="R90"/>
-<pin name="PA13" x="0" y="-5.08" length="short" direction="in"/>
-<pin name="PA14" x="0" y="-7.62" length="short"/>
-<pin name="PB15" x="35.56" y="-22.86" length="short" rot="R180"/>
-<pin name="PA15" x="0" y="-10.16" length="short" direction="in"/>
-<pin name="PB4" x="35.56" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="PB3" x="35.56" y="0" length="short" direction="in" rot="R180"/>
-<pin name="PB7" x="35.56" y="-10.16" length="short" rot="R180"/>
-<pin name="PB6" x="35.56" y="-7.62" length="short" rot="R180"/>
-<pin name="PB5" x="35.56" y="-5.08" length="short" direction="in" rot="R180"/>
-<pin name="PC1" x="0" y="-17.78" length="short" direction="in"/>
-<pin name="PC0" x="0" y="-15.24" length="short" direction="in"/>
-<pin name="RFIO" x="35.56" y="7.62" length="short" direction="in" rot="R180"/>
-<pin name="RST" x="0" y="-22.86" length="short" direction="in"/>
-<pin name="PA3" x="0" y="2.54" length="short" direction="in"/>
-<pin name="PA2" x="0" y="5.08" length="short" direction="in"/>
-<pin name="PB10" x="35.56" y="-15.24" length="short" rot="R180"/>
-<pin name="PA9" x="0" y="0" length="short" direction="in"/>
-<pin name="PA0" x="0" y="7.62" length="short" direction="in"/>
-<pin name="PB13" x="35.56" y="-17.78" length="short" rot="R180"/>
-<pin name="PB9" x="35.56" y="-12.7" length="short" rot="R180"/>
-<pin name="PB14" x="35.56" y="-20.32" length="short" rot="R180"/>
-<pin name="PA10" x="0" y="-2.54" length="short" direction="in"/>
-<pin name="PB0" x="35.56" y="2.54" length="short" direction="in" rot="R180"/>
+<wire x1="-15.24" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="17.78" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<text x="-16.51" y="20.32" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="8.89" y="20.32" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VCC" x="0" y="20.32" length="short" rot="R270"/>
+<pin name="GND" x="0" y="-25.4" length="short" rot="R90"/>
+<pin name="PA13" x="-17.78" y="0" length="short" direction="in"/>
+<pin name="PA14" x="-17.78" y="-2.54" length="short"/>
+<pin name="PB15" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="PA15" x="-17.78" y="-5.08" length="short" direction="in"/>
+<pin name="PB4" x="17.78" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="PB3" x="17.78" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="PB7" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="PB6" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="PB5" x="17.78" y="0" length="short" direction="in" rot="R180"/>
+<pin name="PC1" x="-17.78" y="-12.7" length="short" direction="in"/>
+<pin name="PC0" x="-17.78" y="-10.16" length="short" direction="in"/>
+<pin name="RFIO" x="17.78" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="RST" x="-17.78" y="-17.78" length="short" direction="in"/>
+<pin name="PA3" x="-17.78" y="7.62" length="short" direction="in"/>
+<pin name="PA2" x="-17.78" y="10.16" length="short" direction="in"/>
+<pin name="PB10" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="PA9" x="-17.78" y="5.08" length="short" direction="in"/>
+<pin name="PA0" x="-17.78" y="12.7" length="short" direction="in"/>
+<pin name="PB13" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="PB9" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="PB14" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="PA10" x="-17.78" y="2.54" length="short" direction="in"/>
+<pin name="PB0" x="17.78" y="7.62" length="short" direction="in" rot="R180"/>
 </symbol>
 <symbol name="STM32L071KBT6">
-<wire x1="5.08" y1="12.7" x2="45.72" y2="12.7" width="0.254" layer="94"/>
-<wire x1="45.72" y1="-35.56" x2="45.72" y2="12.7" width="0.254" layer="94"/>
-<wire x1="45.72" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
-<text x="3.81" y="15.24" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="3.81" y="-38.1" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="VDD" x="22.86" y="15.24" length="short" rot="R270"/>
-<pin name="PC14-_OSC32_IN_(PC14)" x="48.26" y="-12.7" length="short" rot="R180"/>
-<pin name="PC15-_OSC32_OUT_(PC15)" x="48.26" y="-15.24" length="short" rot="R180"/>
-<pin name="NRST" x="48.26" y="-25.4" length="short" rot="R180"/>
-<pin name="VDDA" x="27.94" y="15.24" length="short" rot="R270"/>
-<pin name="PA0" x="2.54" y="7.62" length="short"/>
-<pin name="PA1" x="2.54" y="5.08" length="short"/>
-<pin name="PA2" x="2.54" y="2.54" length="short"/>
-<pin name="PA3" x="2.54" y="0" length="short"/>
-<pin name="PA4" x="2.54" y="-2.54" length="short"/>
-<pin name="PA5" x="2.54" y="-5.08" length="short"/>
-<pin name="PA6" x="2.54" y="-7.62" length="short"/>
-<pin name="PA7" x="2.54" y="-10.16" length="short"/>
-<pin name="PB0" x="48.26" y="7.62" length="short" rot="R180"/>
-<pin name="PB1" x="48.26" y="5.08" length="short" rot="R180"/>
-<pin name="VSS" x="25.4" y="-38.1" length="short" rot="R90"/>
-<pin name="PA14" x="2.54" y="-27.94" length="short"/>
-<pin name="PA13" x="2.54" y="-25.4" length="short"/>
-<pin name="PA12" x="2.54" y="-22.86" length="short"/>
-<pin name="PA11" x="2.54" y="-20.32" length="short"/>
-<pin name="PA10" x="2.54" y="-17.78" length="short"/>
-<pin name="PA9" x="2.54" y="-15.24" length="short"/>
-<pin name="PA8" x="2.54" y="-12.7" length="short"/>
-<pin name="BOOT0" x="48.26" y="-20.32" length="short" rot="R180"/>
-<pin name="PB7" x="48.26" y="-7.62" length="short" rot="R180"/>
-<pin name="PB6" x="48.26" y="-5.08" length="short" rot="R180"/>
-<pin name="PB5" x="48.26" y="-2.54" length="short" rot="R180"/>
-<pin name="PB4" x="48.26" y="0" length="short" rot="R180"/>
-<pin name="PB3" x="48.26" y="2.54" length="short" rot="R180"/>
-<pin name="PA15" x="2.54" y="-30.48" length="short"/>
+<wire x1="-20.32" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="20.32" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+<text x="-21.59" y="22.86" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-21.59" y="-30.48" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VDD" x="-2.54" y="22.86" length="short" rot="R270"/>
+<pin name="PC14-_OSC32_IN_(PC14)" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="PC15-_OSC32_OUT_(PC15)" x="22.86" y="-7.62" length="short" rot="R180"/>
+<pin name="NRST" x="22.86" y="-17.78" length="short" rot="R180"/>
+<pin name="VDDA" x="2.54" y="22.86" length="short" rot="R270"/>
+<pin name="PA0" x="-22.86" y="15.24" length="short"/>
+<pin name="PA1" x="-22.86" y="12.7" length="short"/>
+<pin name="PA2" x="-22.86" y="10.16" length="short"/>
+<pin name="PA3" x="-22.86" y="7.62" length="short"/>
+<pin name="PA4" x="-22.86" y="5.08" length="short"/>
+<pin name="PA5" x="-22.86" y="2.54" length="short"/>
+<pin name="PA6" x="-22.86" y="0" length="short"/>
+<pin name="PA7" x="-22.86" y="-2.54" length="short"/>
+<pin name="PB0" x="22.86" y="15.24" length="short" rot="R180"/>
+<pin name="PB1" x="22.86" y="12.7" length="short" rot="R180"/>
+<pin name="VSS" x="0" y="-30.48" length="short" rot="R90"/>
+<pin name="PA14" x="-22.86" y="-20.32" length="short"/>
+<pin name="PA13" x="-22.86" y="-17.78" length="short"/>
+<pin name="PA12" x="-22.86" y="-15.24" length="short"/>
+<pin name="PA11" x="-22.86" y="-12.7" length="short"/>
+<pin name="PA10" x="-22.86" y="-10.16" length="short"/>
+<pin name="PA9" x="-22.86" y="-7.62" length="short"/>
+<pin name="PA8" x="-22.86" y="-5.08" length="short"/>
+<pin name="BOOT0" x="22.86" y="-12.7" length="short" rot="R180"/>
+<pin name="PB7" x="22.86" y="0" length="short" rot="R180"/>
+<pin name="PB6" x="22.86" y="2.54" length="short" rot="R180"/>
+<pin name="PB5" x="22.86" y="5.08" length="short" rot="R180"/>
+<pin name="PB4" x="22.86" y="7.62" length="short" rot="R180"/>
+<pin name="PB3" x="22.86" y="10.16" length="short" rot="R180"/>
+<pin name="PA15" x="-22.86" y="-22.86" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -464,6 +423,52 @@ Source: &lt;a href="https://www.arrow.com/en/products/stm32l071kbt6/stmicroelect
 </deviceset>
 </devicesets>
 </library>
+<library name="frames" urn="urn:adsk.eagle:library:229">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A4L-LOC" urn="urn:adsk.eagle:symbol:13874/1" library_version="1">
+<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A4L-LOC" urn="urn:adsk.eagle:component:13926/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A4, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -474,32 +479,32 @@ Source: &lt;a href="https://www.arrow.com/en/products/stm32l071kbt6/stmicroelect
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5L-LOC" device=""/>
 <part name="H1" library="SamacSys_Parts" deviceset="1015" device=""/>
 <part name="IC1" library="SamacSys_Parts" deviceset="LORA-E5" device=""/>
 <part name="IC2" library="SamacSys_Parts" deviceset="STM32L071KBT6" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="140.97" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="140.97" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="154.305" y="5.08" size="2.54" layer="94"/>
-</instance>
 <instance part="H1" gate="G$1" x="22.86" y="99.06" smashed="yes">
 <attribute name="NAME" x="26.67" y="106.68" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="26.67" y="104.14" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="IC1" gate="G$1" x="47" y="98" smashed="yes">
-<attribute name="NAME" x="48.27" y="113.24" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="73.67" y="113.24" size="1.778" layer="96" align="center-left"/>
+<instance part="IC1" gate="G$1" x="52.08" y="133.56" smashed="yes">
+<attribute name="NAME" x="53.35" y="148.8" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="76.21" y="148.8" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="IC2" gate="G$1" x="101" y="96" smashed="yes">
-<attribute name="NAME" x="104.81" y="111.24" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="104.81" y="57.9" size="1.778" layer="96" align="center-left"/>
+<instance part="IC2" gate="G$1" x="57.82" y="75.68" smashed="yes">
+<attribute name="NAME" x="61.63" y="90.92" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="59.09" y="37.58" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>

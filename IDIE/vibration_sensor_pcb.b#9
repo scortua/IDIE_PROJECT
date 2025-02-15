@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.001" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="39.3700787" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -89,6 +89,33 @@
 <hole x="15.9512" y="-30.8102" drill="3.175"/>
 </plain>
 <libraries>
+<library name="SamacSys_Parts">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="1015">
+<description>&lt;b&gt;1015&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.19" diameter="1.785"/>
+<pad name="2" x="54.48" y="0" drill="1.19" diameter="1.785"/>
+<hole x="0" y="6.73" drill="1.98"/>
+<text x="27.24" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="27.24" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.725" y1="7.77" x2="57.205" y2="7.77" width="0.2" layer="51"/>
+<wire x1="57.205" y1="7.77" x2="57.205" y2="-7.77" width="0.2" layer="51"/>
+<wire x1="57.205" y1="-7.77" x2="-2.725" y2="-7.77" width="0.2" layer="51"/>
+<wire x1="-2.725" y1="-7.77" x2="-2.725" y2="7.77" width="0.2" layer="51"/>
+<wire x1="-2.725" y1="7.77" x2="57.205" y2="7.77" width="0.1" layer="21"/>
+<wire x1="57.205" y1="7.77" x2="57.205" y2="-7.77" width="0.1" layer="21"/>
+<wire x1="57.205" y1="-7.77" x2="-2.725" y2="-7.77" width="0.1" layer="21"/>
+<wire x1="-2.725" y1="-7.77" x2="-2.725" y2="7.77" width="0.1" layer="21"/>
+<wire x1="-3.725" y1="8.77" x2="58.205" y2="8.77" width="0.1" layer="51"/>
+<wire x1="58.205" y1="8.77" x2="58.205" y2="-8.77" width="0.1" layer="51"/>
+<wire x1="58.205" y1="-8.77" x2="-3.725" y2="-8.77" width="0.1" layer="51"/>
+<wire x1="-3.725" y1="-8.77" x2="-3.725" y2="8.77" width="0.1" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -282,6 +309,16 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="H1" library="SamacSys_Parts" package="1015" value="1015" x="-27.25361875" y="-21.746203125" smashed="yes">
+<attribute name="DESCRIPTION" value="Cylindrical Battery Contacts, Clips, Holders &amp; Springs AA PC Battery HOLDER" x="-27.25361875" y="-21.746203125" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-27.25361875" y="-21.746203125" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Keystone Electronics" x="-27.25361875" y="-21.746203125" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1015" x="-27.25361875" y="-21.746203125" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="534-1015" x="-27.25361875" y="-21.746203125" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1015?qs=73q%2FgRcW4F2OhJTPPQWZpA%3D%3D" x="-27.25361875" y="-21.746203125" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-0.01361875" y="-21.746203125" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-0.01361875" y="-19.746203125" size="1.27" layer="27" align="center"/>
+</element>
 </elements>
 <signals>
 </signals>
