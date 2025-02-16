@@ -1,5 +1,13 @@
-# [![ECI](imagenes/logo_eci.png)](https://www.escuelaing.edu.co/)PROYECTO INTEGRACIÓN DISPOSITIVOS ELECTRÓNICOS
 #### Diseño de un Sistema de Monitoreo de Vibraciones IoT con Conectividad LoRaWAN
+# [![ECI](imagenes/logo_eci.png)](https://www.escuelaing.edu.co/)PROYECTO INTEGRACIÓN DISPOSITIVOS ELECTRÓNICOS
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git Badge">
+  <img src="https://img.shields.io/badge/Eagle-009A00?style=for-the-badge&logo=autodesk&logoColor=white" alt="Eagle Badge">
+  <img src="https://img.shields.io/badge/Fusion%20360-FF6600?style=for-the-badge&logo=autodesk&logoColor=white" alt="Fusion 360 Badge">
+  <img src="https://img.shields.io/badge/Mouser-004F9F?style=for-the-badge&logo=mouser&logoColor=white" alt="Mouser Badge">
+  <img src="https://img.shields.io/badge/Library%20Loader-0078D7?style=for-the-badge&logo=libraryloader&logoColor=white" alt="Library Loader Badge">
+</p>
 
 ## Índice
 * [PCB](#diseño-pcb)
@@ -65,19 +73,36 @@ Antes de comenzar es necesario buscar sobre dispositivos similares y si existen,
 <p align="center">
   <img src="imagenes/logo_eagle.png" alt="Logo" width="300">
 </p>
-
+<details>
+<summary> Dimensiones </summary>
 Primer paso fue construir la PCB que entrara a la perfección dentro de la caja seleccionada que se ve a continuación.
 
 ![Caja](image.png)
 
 Estas medidas se siguieron al pie de la letra para poder diseñar a la perfección la PCB y el circuito que se desea.
+</details>
+
+<details>
+<summary> Esquemático </summary>
+ Pronto
+</details>
+
+<details>
+<summary> PCB </summary>
+ Pronto
+</details>
+
+<details>
+<summary> Extra </summary>
+ Pornto
+</details>
 
 Materiales:
-> [LoRa-E5](https://co.mouser.com/ProductDetail/Seeed-Studio/317990687?qs=hd1VzrDQEGhZOj13wvzSLA%3D%3D)
-> [STM32L071KBT6](https://co.mouser.com/ProductDetail/STMicroelectronics/STM32L071KBT6?qs=mKNKSX85ZJf5FR8Umx1PEQ%3D%3D)
-> [Sock bateria](https://co.mouser.com/ProductDetail/Keystone-Electronics/1015?qs=73q%2FgRcW4F2OhJTPPQWZpA%3D%3D)
-
-
+* Modulo LoRa [LoRa-E5](https://co.mouser.com/ProductDetail/Seeed-Studio/317990687?qs=hd1VzrDQEGhZOj13wvzSLA%3D%3D)  
+* Microcontrolador [STM32L071KBT6](https://co.mouser.com/ProductDetail/STMicroelectronics/STM32L071KBT6?qs=mKNKSX85ZJf5FR8Umx1PEQ%3D%3D)
+* Modulo IMU [FXLS8971CFR1](https://co.mouser.com/ProductDetail/NXP-Semiconductors/FXLS8971CFR1?qs=2wMNvWM5ZX4%252B65U5I7Iudw%3D%3D) [FXLS8974CFR3](https://co.mouser.com/ProductDetail/NXP-Semiconductors/FXLS8974CFR3?qs=QNEnbhJQKva4g7R74%252BwIOg%3D%3D)
+* Antena [w3211](https://co.mouser.com/ProductDetail/Pulse-Electronics/W3211?qs=l7cgNqFNU1g5WBF3n%252BWoMg%3D%3D)
+* Sockbateria [ ](https://co.mouser.com/ProductDetail/Keystone-Electronics/1015?qs=73q%2FgRcW4F2OhJTPPQWZpA%3D%3D)
 
 
 ## Diseño 3D
