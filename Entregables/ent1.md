@@ -21,6 +21,8 @@ Febrero 2025
 7. Tiempo de Entrega
 
 ## 1. Introducción
+- **Equipo**: Descripción del equipo y su experiencia.
+- **Objetivo**: Objetivo del proyecto y justificación.
 
 Somos un equipo de estudiantes de Ingeniería Electrónica comprometidos con el desarrollo de soluciones tecnológicas innovadoras para la industria. Nuestro enfoque se centra en la integración de tecnologías IoT para el monitoreo y mantenimiento predictivo de maquinaria industrial.
 
@@ -29,6 +31,8 @@ El mantenimiento predictivo basado en el análisis de vibraciones es una técnic
 Nuestro proyecto propone el desarrollo de un dispositivo IoT de monitoreo de vibraciones que integra tecnología LoRaWAN, permitiendo una supervisión continua y en tiempo real del estado de la maquinaria industrial, con un enfoque en la eficiencia energética y la conectividad de largo alcance.
 
 ## 2. Detalle del Producto
+- **Descripción**: Funcionalidades y características técnicas del dispositivo.
+- **Especificaciones**: Dimensiones, materiales, autonomía, etc.
 
 El producto es un sistema compacto de monitoreo de vibraciones con las siguientes características principales:
 
@@ -59,7 +63,8 @@ El producto es un sistema compacto de monitoreo de vibraciones con las siguiente
 - Interfaz de configuración para parámetros de operación
 
 ## 3. Alcance de los Servicios Ofertados
-
+- **Lista de servicios**: Diseño de hardware, firmware, conectividad, pruebas, documentación, entrega de prototipo.
+- **Garantías**: Detalles de la garantía y soporte técnico.
 ### Diseño y Desarrollo
 - Diseño completo del hardware del dispositivo
 - Desarrollo del firmware embebido
@@ -88,8 +93,14 @@ El producto es un sistema compacto de monitoreo de vibraciones con las siguiente
 - Carcasa protectora
 - Accesorios de montaje
 
-## 4. Servicios No Ofertados
+### Garantías
+- Tiempo de prueba
+- Problemas en caja
+- Problemas del dispositivo
 
+## 4. Servicios No Ofertados
+- **Lista de servicios no incluidos**: Producción en masa, logística, desarrollo de aplicaciones, soporte extendido.
+- **Explicación**: Razones por las que no están incluidos.
 - Instalación en sitio del dispositivo
 - Mantenimiento continuo post-entrega
 - Desarrollo de aplicaciones móviles personalizadas
@@ -100,7 +111,8 @@ El producto es un sistema compacto de monitoreo de vibraciones con las siguiente
 - Actualizaciones de firmware posteriores a la entrega
 
 ## 5. Valor
-
+- **Costos**: Mano de obra, materiales, gastos operativos, impuestos.
+- **Forma de pago**: Pago inicial y pagos periódicos.
 El costo de producción objetivo para 1000 unidades es de $80 USD por unidad, incluyendo:
 - Componentes electrónicos
 - PCB fabricación y ensamblaje
@@ -109,8 +121,12 @@ El costo de producción objetivo para 1000 unidades es de $80 USD por unidad, in
 - Gastos administrativos
 - Margen de producción
 
-## 6. Cronograma de Trabajo
+Calculo fijo mensual (alquiler, servicios, comida...)
+Gastos anuales divididos por 12, dividir al tiempo de trabajo con gastos y ahora se agregan las ganancias.
 
+## 6. Cronograma de Trabajo
+- **Actividades**: Lista de actividades y fechas estimadas.
+- **Diagrama**: Cronograma visual (opcional).
 ### Fase 1: Diseño Inicial (Semanas 1-3)
 - Selección de componentes
 - Diseño esquemático
@@ -137,7 +153,8 @@ El costo de producción objetivo para 1000 unidades es de $80 USD por unidad, in
 - Preparación de entregables
 
 ## 7. Tiempo de Entrega
-
+- **Plazo**: 16 semanas.
+- **Justificación**: Explicación del tiempo necesario.
 El proyecto se desarrollará en un período de 16 semanas, con entregables parciales según el siguiente calendario:
 
 - Primer Entregable: 22 de febrero de 2025

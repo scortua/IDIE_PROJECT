@@ -94,13 +94,13 @@ Estas medidas se siguieron al pie de la letra para poder dise√±ar a la perfecci√
 
 <details>
 <summary> Extra </summary>
- Pornto
+ Pronto
 </details>
 
 Materiales:
 * Modulo LoRa [LoRa-E5](https://co.mouser.com/ProductDetail/Seeed-Studio/317990687?qs=hd1VzrDQEGhZOj13wvzSLA%3D%3D)  
 * Microcontrolador [STM32L071KBT6](https://co.mouser.com/ProductDetail/STMicroelectronics/STM32L071KBT6?qs=mKNKSX85ZJf5FR8Umx1PEQ%3D%3D)
-* Modulo IMU [FXLS8971CFR1](https://co.mouser.com/ProductDetail/NXP-Semiconductors/FXLS8971CFR1?qs=2wMNvWM5ZX4%252B65U5I7Iudw%3D%3D) [FXLS8974CFR3](https://co.mouser.com/ProductDetail/NXP-Semiconductors/FXLS8974CFR3?qs=QNEnbhJQKva4g7R74%252BwIOg%3D%3D)
+* Modulo IMU [FXLS8971CFR1](https://co.mouser.com/ProductDetail/NXP-Semiconductors/FXLS8971CFR1?qs=2wMNvWM5ZX4%252B65U5I7Iudw%3D%3D) o [FXLS8974CFR3](https://co.mouser.com/ProductDetail/NXP-Semiconductors/FXLS8974CFR3?qs=QNEnbhJQKva4g7R74%252BwIOg%3D%3D)
 * Antena [w3211](https://co.mouser.com/ProductDetail/Pulse-Electronics/W3211?qs=l7cgNqFNU1g5WBF3n%252BWoMg%3D%3D)
 * Sockbateria [ ](https://co.mouser.com/ProductDetail/Keystone-Electronics/1015?qs=73q%2FgRcW4F2OhJTPPQWZpA%3D%3D)
 
