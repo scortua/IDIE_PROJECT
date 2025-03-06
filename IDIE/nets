@@ -1,0 +1,145 @@
+Netlist
+
+Exported from vibration_sensor_pcb.sch at 6/03/2025 3:40 p. m.
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Net       Part     Pad      Pin        Sheet
+
++3V3      C3       1        1          1
+          C4       1        1          1
+          C6       1        1          1
+          C7       1        1          1
+          IC1      1        VCC        1
+          IC2      1        VDD        1
+          IC2      17       VDD        1
+          IC2      5        VDDA       1
+          IC3      1        VDD        1
+          IC4      1        VDD        1
+          JMP3     3        3          1
+          R2       2        2          1
+          R5       2        2          1
+          R6       2        2          1
+
+ANT       ANT1     1        FEED       1
+          C2       1        1          1
+          R1       2        2          1
+
+BOOT      IC1      24       PB13       1
+          TP3      TP       TP         1
+
+E5_RST    C5       1        1          1
+          IC1      17       RST        1
+          R2       1        1          1
+          T1       C        C          1
+
+GND       C1       2        2          1
+          C2       2        2          1
+          C3       2        2          1
+          C4       2        2          1
+          C5       2        2          1
+          C6       2        2          1
+          C7       2        2          1
+          H1       2        -          1
+          IC1      14       GND        1
+          IC1      16       GND        1
+          IC1      2        GND        1
+          IC1      22       GND        1
+          IC2      16       VSS        1
+          IC2      32       VSS        1
+          IC3      10       GND        1
+          IC3      2        BT_MODE    1
+          IC4      10       GND        1
+          IC4      2        BT_MODE    1
+          JMP3     1        1          1
+          R7       1        1          1
+          T1       E        E          1
+
+I2C_SCL   IC2      19       PA9        1
+
+I2C_SDA   IC2      20       PA10       1
+
+INT1      IC3      8        INT1/MOT_DET 1
+          IC4      8        INT1/MOT_DET 1
+          R6       1        1          1
+
+INT2      IC3      6        INT2/EXT_TRIG 1
+          IC4      6        INT2/EXT/TRIG 1
+          R5       1        1          1
+
+MCU_RXD   IC2      9        PA3        1
+          R3       2        2          1
+
+MCU_SWCLK IC2      24       PA14       1
+
+MCU_SWDIO IC2      23       PA13       1
+
+MCU_TXD   IC2      8        PA2        1
+          R4       2        2          1
+
+MD_RST    T1       B        B          1
+
+N$1       IC3      9        INTF_SEL   1
+          IC4      9        INTF_SEL   1
+          JMP3     2        2          1
+
+N$3       IC1      10       PB6        1
+          R3       1        1          1
+          TP5      TP       TP         1
+
+N$4       IC1      9        PB7        1
+          R4       1        1          1
+          TP4      TP       TP         1
+
+PA8       IC2      18       PA8        1
+
+PA15      IC2      25       PA15       1
+
+PB3       IC2      26       PB3        1
+
+PB4       IC2      27       PB4        1
+
+PB5       IC2      28       PB5        1
+
+PB6       IC2      29       PB6        1
+
+PB7       IC2      30       PB7        1
+
+RF_IO     C1       1        1          1
+          IC1      15       RFIO       1
+          R1       1        1          1
+
+SCL       JMP2     3        3          1
+
+SCL/SCLK  IC3      5        SCL/SCLK   1
+          IC4      5        SCL/SCLK   1
+          JMP2     2        2          1
+
+SDA       JMP1     3        3          1
+
+SDA/MOSI  IC3      4        SDA/SPI_MOSI 1
+          IC4      4        SDA/SPI_MOSI 1
+          JMP1     2        2          1
+
+SPI_CS    IC2      10       PA4        1
+          IC3      7        SPI_CS_B   1
+          IC4      7        SPI_CSB    1
+
+SPI_MISO  IC2      12       PA6        1
+          IC3      3        SA0/SPI_MISO 1
+          IC4      3        SA0/SPI_MISO 1
+          R7       2        2          1
+
+SPI_MOSI  IC2      13       PA7        1
+          JMP1     1        1          1
+
+SPI_SCK   IC2      11       PA5        1
+
+SPI_SCLK  JMP2     1        1          1
+
+SWCLK     IC1      4        PA14       1
+          TP1      TP       TP         1
+
+SWDIO     IC1      3        PA13       1
+          TP2      TP       TP         1
+
