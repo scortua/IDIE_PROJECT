@@ -82,20 +82,17 @@ Primer paso fue construir la PCB que entrara a la perfección dentro de la caja 
 Estas medidas se siguieron al pie de la letra para poder diseñar a la perfección la PCB y el circuito que se desea.
 </details>
 
-<details>
-<summary> Esquemático </summary>
- Pronto
-</details>
+## Componentes
 
-<details>
-<summary> PCB </summary>
- Pronto
-</details>
 
-<details>
-<summary> Extra </summary>
+## Esquemático
  Pronto
-</details>
+
+## PCB
+ Pronto
+
+## Extra
+ Pronto
 
 Materiales:
 * Modulo LoRa [LoRa-E5](https://co.mouser.com/ProductDetail/Seeed-Studio/317990687?qs=hd1VzrDQEGhZOj13wvzSLA%3D%3D)  
