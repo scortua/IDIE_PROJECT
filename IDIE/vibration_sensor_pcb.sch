@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -82,7 +82,6 @@
 </description>
 <pad name="1" x="0" y="0" drill="1.19" diameter="1.785"/>
 <pad name="2" x="54.48" y="0" drill="1.19" diameter="1.785"/>
-<hole x="0" y="6.73" drill="1.98"/>
 <text x="27.24" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="27.24" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-2.725" y1="7.77" x2="57.205" y2="7.77" width="0.2" layer="51"/>

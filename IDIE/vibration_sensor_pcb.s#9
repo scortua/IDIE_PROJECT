@@ -10114,8 +10114,8 @@ Solder type</description>
 <instance part="+3V5" gate="G$1" x="50.075" y="113.995" smashed="yes">
 <attribute name="VALUE" x="47.535" y="108.915" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V6" gate="G$1" x="21.24" y="151.66" smashed="yes">
-<attribute name="VALUE" x="19.305" y="148.175" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V6" gate="G$1" x="45.09" y="155.26" smashed="yes">
+<attribute name="VALUE" x="43.155" y="151.775" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C4" gate="G$1" x="35.87" y="25.62" smashed="yes">
 <attribute name="NAME" x="37.394" y="26.001" size="1.778" layer="95"/>
@@ -10217,9 +10217,9 @@ Solder type</description>
 <attribute name="NAME" x="245.85" y="56.14" size="1.778" layer="95"/>
 </instance>
 <instance part="JMP3" gate="G$2" x="246.86" y="60.54" smashed="yes"/>
-<instance part="Q1" gate="G$1" x="45.75" y="149.95" smashed="yes">
-<attribute name="NAME" x="57.18" y="153.76" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="57.18" y="151.22" size="1.778" layer="96" align="center-left"/>
+<instance part="Q1" gate="G$1" x="35" y="140" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.53" y="154.26" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="26.48" y="151.77" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -10418,6 +10418,12 @@ Solder type</description>
 <pinref part="JMP3" gate="-0R" pin="3"/>
 <wire x1="244.825" y1="62.91" x2="244.825" y2="60.865" width="0.1524" layer="91"/>
 <wire x1="244.825" y1="60.865" x2="244.84" y2="60.865" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="40.08" y1="147.62" x2="45.09" y2="147.62" width="0.1524" layer="91"/>
+<wire x1="45.09" y1="147.62" x2="45.09" y2="152.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="E5_RST" class="0">
@@ -10781,6 +10787,14 @@ Solder type</description>
 <wire x1="220.595" y1="58.435" x2="242.3" y2="58.435" width="0.1524" layer="91"/>
 <wire x1="242.3" y1="58.435" x2="242.3" y2="58.325" width="0.1524" layer="91"/>
 <junction x="220.595" y="58.435"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="+"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="21.78" y1="144.135" x2="21.78" y2="147.62" width="0.1524" layer="91"/>
+<wire x1="21.78" y1="147.62" x2="24.84" y2="147.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

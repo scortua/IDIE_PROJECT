@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10111,6 +10111,8 @@ Solder type</description>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="12.5uF"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="12.5uF"/>
 <part name="Y1" library="SamacSys_Parts" deviceset="ABS06-32.768KHZ-9-1-T" device=""/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10312,17 +10314,23 @@ Solder type</description>
 <instance part="GND12" gate="1" x="52.12" y="122.87" smashed="yes">
 <attribute name="VALUE" x="49.58" y="120.33" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="102.925" y="69.355" smashed="yes">
-<attribute name="NAME" x="104.449" y="69.736" size="1.778" layer="95"/>
-<attribute name="VALUE" x="104.449" y="64.656" size="1.778" layer="96"/>
+<instance part="C10" gate="G$1" x="92.765" y="71.895" smashed="yes">
+<attribute name="NAME" x="94.289" y="72.276" size="1.778" layer="95"/>
+<attribute name="VALUE" x="94.289" y="67.196" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="114.325" y="69.205" smashed="yes">
-<attribute name="NAME" x="115.849" y="69.586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.849" y="64.506" size="1.778" layer="96"/>
+<instance part="C11" gate="G$1" x="104.165" y="71.745" smashed="yes">
+<attribute name="NAME" x="105.689" y="72.126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.689" y="67.046" size="1.778" layer="96"/>
 </instance>
-<instance part="Y1" gate="G$1" x="104.14" y="76.2" smashed="yes">
-<attribute name="NAME" x="113.03" y="82.55" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="113.03" y="80.01" size="1.778" layer="96" align="center-left"/>
+<instance part="Y1" gate="G$1" x="93.98" y="78.74" smashed="yes">
+<attribute name="NAME" x="107.95" y="82.55" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="107.95" y="80.01" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND13" gate="1" x="92.735" y="62.28" smashed="yes">
+<attribute name="VALUE" x="90.195" y="59.74" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="104.135" y="62.48" smashed="yes">
+<attribute name="VALUE" x="101.595" y="59.94" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10462,6 +10470,18 @@ Solder type</description>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="52.12" y1="125.41" x2="52.12" y2="128.375" width="0.1524" layer="91"/>
 <wire x1="52.12" y1="128.375" x2="52.125" y2="128.625" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="92.735" y1="64.82" x2="92.735" y2="66.815" width="0.1524" layer="91"/>
+<wire x1="92.735" y1="66.815" x2="92.765" y2="66.815" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="104.135" y1="65.02" x2="104.135" y2="66.665" width="0.1524" layer="91"/>
+<wire x1="104.135" y1="66.665" x2="104.165" y2="66.665" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10930,6 +10950,33 @@ Solder type</description>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="35.915" y1="136.295" x2="35.915" y2="138.05" width="0.1524" layer="91"/>
 <wire x1="35.915" y1="138.05" x2="35.9" y2="138.05" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="PC14-_OSC32_IN_(PC14)"/>
+<wire x1="75.505" y1="81.05" x2="93.8" y2="81.05" width="0.1524" layer="91"/>
+<wire x1="93.8" y1="81.05" x2="93.8" y2="84.95" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="2"/>
+<wire x1="93.8" y1="84.95" x2="104.14" y2="84.95" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="84.95" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="104.165" y1="74.285" x2="104.14" y2="74.285" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="74.285" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+<junction x="104.14" y="78.74"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="G$1" pin="PC15-_OSC32_OUT_(PC15)"/>
+<wire x1="93.98" y1="78.74" x2="75.505" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="75.505" y1="78.74" x2="75.505" y2="78.51" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="92.765" y1="74.435" x2="92.765" y2="78.75" width="0.1524" layer="91"/>
+<wire x1="92.765" y1="78.75" x2="93.98" y2="78.75" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="78.75" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
+<junction x="93.98" y="78.74"/>
 </segment>
 </net>
 </nets>
