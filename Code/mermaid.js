@@ -1,26 +1,35 @@
 ---
 config:
+  look: neo
   layout: elk
-  theme: neo
 ---
 flowchart TD
- subgraph SISTEMA["Alimentación"]
-    direction TB
-        PROTECCION["Protección<br>Electrónica"]
-        BATERIA["Batería"]
-        USB["Conexión USB-C"]
-        BATERIA --> PROTECCION
+    BATERIA["Bateria"]
+    PROTECCION["Protección Electrónica"]
+    USB["Concexión USB-C"]
+    SERIAL["Modulo<br>Serial"]
+    ENERGIA["Alimentación Principal<br>del Sistema"]
+    MICRO["Microcontrolador"]
+    LORA["Modulo LoRa"]
+    ANTENA["Antena"]
+    MQTT["Envio datos<br>por Protocolo"]
+    IMAN["Sensor<br>Detector Imanes"]
+    IMU["Sensor Triaxial<br>Medición Vibración"]
+    RGB["Luz RGB<br>Indica Funcionamiento"]
+
+    subgraph ALIMENTACION
         USB --> PROTECCION
-  end
-  subgraph PRODUCTO["Función"]
-    PROTECCION --> SERIAL["Módulo<br>Serial"]
-    %%ENERGIA --> MICRO["Microcontrolador"]
+        BATERIA --> PROTECCION
+    end
+    subgraph INALAMBRICO
+        LORA --> ANTENA
+    end
+        
+    BATERIA --> ENERGIA
+    PROTECCION -- Datos/Energia --> SERIAL
     SERIAL -- Programación --> MICRO
-    MICRO["Microcontrolador"] --> LORA["Módulo<br>LoRa"]
-    LORA --> MQTT["Envío datos<br>Protocolo MQTT"]
-    SENSOR["Sensor<br>Detector Imanes"] -- Activar<br>Desactivar --> MICRO
-    MICRO -- Indicación<br>Visual --> RGB["Luz RGB<br>Verificación Funcionamiento"]
-    MICRO <-- Comunicación<br>Continua --> IMU["Sensor Triaxial<br>Medición Vibración"]
-  end
-    SISTEMA --> ENERGIA["Alimentación<br>Principal"]
-    ENERGIA --> PRODUCTO
+    IMU <-- Comunicación<br>Constante --> MICRO
+    IMAN -- Activar<br>Desactivar --> MICRO
+    MICRO <-- Comucicación<br>Parcial --> INALAMBRICO
+    MICRO -- Indicador --> RGB
+    INALAMBRICO --> MQTT
