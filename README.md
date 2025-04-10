@@ -131,11 +131,11 @@ A continuación se describen los dispositivos fundamentales utilizados en el pro
 ### Desarrollo del Esquemático
 
 Para el desarrollo del esquemático se utilizó el software Eagle, lo que permitió integrar de forma precisa todos los elementos del circuito. Los componentes se seleccionaron desde Mouser y se incorporaron mediante el gestor de librerías Library Loader, asegurando una integración coherente y validada antes de avanzar al diseño de PCB.
-
+Para la hoja 1 se tiene:
 <p align="center">
   <img src="./Imagenes/sheet1.png" alt="Esquemático1" width="600">
 </p>
-
+Y para la hoja 2 se tiene:
 <p align="center">
   <img src="./imagenes/sheet2.png" alt="Esquemático2" width="600">
 </p>
@@ -150,6 +150,6 @@ Ahora, con el diseño del esquemático como se planteo es construirlo en un mode
 
 ## Diseño 3D
 <p align="center">
-  <img src="imagenes/logo_fusion.png" alt="Logo" width="300">
+  <img src="./imagenes/logo_fusion.png" alt="Logo" width="300">
 </p>
 
