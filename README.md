@@ -78,7 +78,7 @@ Antes de comenzar es necesario buscar sobre dispositivos similares y si existen,
 <summary> Dimensiones </summary>
 Primer paso fue construir la PCB que entrara a la perfección dentro de la caja seleccionada que se ve a continuación.
 
-![Caja](image.png)
+![Caja](./imagenes/image.png)
 
 Estas medidas se siguieron al pie de la letra para poder diseñar a la perfección la PCB y el circuito que se desea.
 </details>
@@ -128,13 +128,28 @@ A continuación se describen los dispositivos fundamentales utilizados en el pro
   - **Ganancia y Eficiencia:** Optimizada para maximizar el alcance y garantizar una recepción estable.
 
 ## Esquemático
- Pronto
+### Desarrollo del Esquemático
+
+Para el desarrollo del esquemático se utilizó el software Eagle, lo que permitió integrar de forma precisa todos los elementos del circuito. Los componentes se seleccionaron desde Mouser y se incorporaron mediante el gestor de librerías Library Loader, asegurando una integración coherente y validada antes de avanzar al diseño de PCB.
+
+<p align="center">
+  <img src="./Imagenes/sheet1.png" alt="Esquemático1" width="600">
+</p>
+
+<p align="center">
+  <img src="./imagenes/sheet2.png" alt="Esquemático2" width="600">
+</p>
 
 ## PCB
- Pronto
+Ahora, con el diseño del esquemático como se planteo es construirlo en un modelo de caja
+
+<p align="center">
+  <img src="./imagenes/pcb.png" alt="PCB" width="600">
+</p>
 
 
 ## Diseño 3D
 <p align="center">
   <img src="imagenes/logo_fusion.png" alt="Logo" width="300">
 </p>
+
